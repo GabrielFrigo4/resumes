@@ -60,14 +60,14 @@
 \end{center}
 
 \section{Summary}
-Undergraduate Computer Science student with a versatile profile and solid experience in low-level and high-performance systems programming. Proficient in C, C++, Rust, and Python, with expertise in developing graphics applications (OpenGL, Vulkan, DirectX) and parallel computing (CUDA, OpenCL). Additional skills include the development of ML/AI solutions and linear optimization.
+Undergraduate Computer Science student with a versatile profile, bridging low-level systems programming and a broad software architecture mindset. Proficient in C, C++, Rust, and Python, with experience spanning parallel computing (CUDA, OpenCL) and computer graphics (OpenGL, Vulkan) to backend API development, Linux/FreeBSD server administration, and containerization with Docker/Podman. Passionate about design patterns, functional programming, and algorithmic optimization. Strong mathematical foundation reinforced by scientific research and national-level competitions.
 
 \section{Skills \& Languages}
 \resumeSubHeadingList
   \resumeItem{\textbf{Languages}: C, C++, Rust, Zig, Go, C\#, Java, Python, Lua, Assembly, SQL}
-  \resumeItem{\textbf{Tools}: Git, GitHub, GitLab, Linux, FreeBSD, Docker, PostgreSQL, DBeaver, Postman}
+  \resumeItem{\textbf{Tools}: Git, GitHub, GitLab, Linux, FreeBSD, Docker, Podman, LXC (Incus), Jails, Nginx/Caddy, PostgreSQL, DBeaver, Postman, Oracle Cloud (OCI)}
   \resumeItem{\textbf{Libraries \& Frameworks}: CUDA, OpenGL, Vulkan, OpenCL, SDL3, WinAPI, OpenCV, Pandas, NumPy}
-  \resumeItem{\textbf{Concepts}: Data Structures \& Algorithms, Graphs \& Optimization, OOP, Reverse Engineering, GPGPU}
+  \resumeItem{\textbf{Concepts}: Data Structures \& Algorithms, Graphs \& Optimization, Software Architecture, Design Patterns, Object-Oriented Programming, Functional Programming, GPGPU}
   \resumeItem{\textbf{Soft Skills}: Objective communication; ability to break down complex tasks; goal-oriented; committed to targets and teamwork; fast learner; values small victories.}
   \resumeItem{\textbf{Languages}: Portuguese (Native); English (Intermediate).}
 \resumeSubHeadingListEnd
@@ -146,39 +146,31 @@ Undergraduate Computer Science student with a versatile profile and solid experi
     \resumeSubHeadingListEnd
 
   \resumeSubheading
+    {\href{https://shop.gabrielfrigo.dev.br}{UFABC Store \& Product Catalog}}{Jun/2026 -- Present}
+    {Infrastructure \& Backend}{Go, PocketBase, Podman, Oracle Cloud (OCI)}
+    \resumeSubHeadingList
+      \resumeItem{\textbullet\ Collaborative catalog of stores and products around UFABC, live in production.}
+      \resumeItem{\textbullet\ Go backend with PocketBase, containerized via Podman on a Linux instance at Oracle Cloud.}
+      \resumeItem{\textbullet\ Configured Caddy reverse proxy for HTTPS and HTTP/2.}
+      \resumeItem{\textbullet\ Live Project: \href{https://shop.gabrielfrigo.dev.br/}{shop.gabrielfrigo.dev.br}}
+    \resumeSubHeadingListEnd
+
+  \resumeSubheading
     {\href{https://github.com/GabrielFrigo4/unix-sock}{Concurrent HTTP Web Server}}{Feb/2026 -- May/2026}
     {Low-Level Systems \& Networking}{C, GNU/BSD Sockets, Caddy, HTTP/2}
     \resumeSubHeadingList
-      \resumeItem{\textbullet\ Developed an HTTP server in C from scratch, operating on the GNU/BSD Sockets API.}
-      \resumeItem{\textbullet\ Implemented concurrency based on \textit{forks} (multiprocessing) to handle simultaneous requests.}
-      \resumeItem{\textbullet\ Deployed using Caddy reverse proxy for secure termination (HTTPS) and native HTTP/2 support.}
+      \resumeItem{\textbullet\ HTTP server in C from scratch, built on the GNU/BSD Sockets API, cross-platform with GNU/Linux and FreeBSD.}
+      \resumeItem{\textbullet\ Fork-based concurrency (multiprocessing) for handling simultaneous requests.}
+      \resumeItem{\textbullet\ Deployed on Oracle Cloud (OCI) with Caddy reverse proxy (HTTPS, HTTP/2).}
       \resumeItem{\textbullet\ Live Project: \href{https://game.gabrielfrigo.dev.br/}{game.gabrielfrigo.dev.br}}
     \resumeSubHeadingListEnd
 
-  \resumeSubheading
-    {SpaceInvaders Game}{Sep/2025 -- Present}
-    {Graphics \& GPGPU}{C/C++, SDL3, OpenGL, OpenCL, OpenAL}
-    \resumeSubHeadingList
-      \resumeItem{\textbullet\ Optimized 2D engine with hardware acceleration and an extensible architecture.}
-      \resumeItem{\textbullet\ Utilized GPGPU for real-time parallel physics processing.}
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
-  \resumeSubheading
-    {\href{https://github.com/GabrielFrigo4/BioDefense}{BioDefense Project}}{Sep/2021 -- Dec/2021}
-    {Educational "Tower Defense" Game}{C\#, Unity}
-    \resumeSubHeadingList
-      \resumeItem{\textbullet\ Tower Defense game based on the immune system and disease prevention.}
-      \resumeItem{\textbullet\ Developed pathogen defense mechanics using C\# and Unity.}
-    \resumeSubHeadingListEnd
-
-  \resumeSubheading
-    {Point of Sale (POS) \& Management Project}{Jun/2021 -- Jan/2025}
-    {Desktop Applications}{Jardim Máquinas, SP}
-    \resumeSubHeadingList
-      \resumeItem{\textbullet\ Developed an NFe (Electronic Invoicing) manager and an RTF to PDF converter.}
-      \resumeItem{\textbullet\ Created a WebCam registration system to optimize commercial workflows.}
-    \resumeSubHeadingListEnd
-
+\section{Programming Contests}
+\resumeSubHeadingList
+  \resumeItem{\textbf{Regional Phase (2024 -- 135th place, 2025 -- 107th place in the Brazilian scoreboard)} -- SBC Programming Marathon (ICPC)}
+  \resumeItem{\textbf{15th Overall Place (2025)} -- S\~{a}o Paulo Programming Marathon}
 \resumeSubHeadingListEnd
 
 \section{Honors \& Awards}
@@ -186,7 +178,7 @@ Undergraduate Computer Science student with a versatile profile and solid experi
   \resumeItem{\textbf{Gold (2022 - 13th National Rank), Silver (2018, 2019), and Bronze (2017, 2021) Medals} -- OBMEP (Brazilian Public Schools Math Olympiad)}
   \resumeItem{\textbf{Gold Medals (2019, 2022)} -- OBA (Brazilian Astronomy and Astronautics Olympiad)}
   \resumeItem{\textbf{Silver Medal (2023) and Honorable Mention (2025)} -- CELLM (Logic Competition)}
-  \resumeItem{\textbf{Bronze Medal (2021)} -- OPM (São Paulo Mathematics Olympiad)}
+  \resumeItem{\textbf{Bronze Medal (2021)} -- OPM (S\~{a}o Paulo Mathematics Olympiad)}
   \resumeItem{\textbf{Honorable Mention (2024)} -- OBI (Brazilian Informatics Olympiad)}
 \resumeSubHeadingListEnd
 
