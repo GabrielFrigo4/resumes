@@ -1,6 +1,5 @@
 \documentclass[letterpaper,10pt]{article}
 
-% === PACOTES E CONFIGURAÇÕES ===
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -14,7 +13,6 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-% Fonte Sans-Serif Limpa (Roboto)
 \usepackage[sfdefault]{roboto}
 
 \pagestyle{fancy}
@@ -24,11 +22,10 @@
 \renewcommand{\footrulewidth}{0pt}
 \setlength{\footskip}{5pt}
 
-% Ajuste de Margens
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.5in}
+\addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -36,16 +33,13 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Formatação de Seções (Esconde números automaticamente)
 \titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
 
-% Otimização para leitura por ATS (Applicant Tracking Systems)
 \pdfgentounicode=1
 
-% === COMANDOS CUSTOMIZADOS ===
 \newcommand{\resumeItem}[1]{\item\small{#1}}
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+\vspace{-1pt}\item
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
     \textit{#3} & \textit{#4} \\
@@ -55,42 +49,44 @@
 \newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
-% ==============================================
-%               INÍCIO DO DOCUMENTO
-% ==============================================
 \begin{document}
 
-% === CABEÇALHO ===
 \begin{center}
   \textbf{\Huge Gabriel Frigo} \\
-  \vspace{2pt}
   \small +55 11 95570-2000 $|$ \href{mailto:gabriel.frigo4@gmail.com}{gabriel.frigo4@gmail.com} $|$
-  \href{https://www.linkedin.com/in/gabriel-frigo-b6727b275/}{linkedin.com/in/gabriel-frigo} $|$
-  \href{https://github.com/GabrielFrigo4}{github.com/GabrielFrigo4}
+  \href{https://linkedin.com/in/gabriel-frigo-b6727b275/}{linkedin.com/in/gabriel-frigo} $|$
+  \href{https://github.com/GabrielFrigo4}{github.com/GabrielFrigo4} $|$
+  \href{https://gabrielfrigo.dev.br}{gabrielfrigo.dev.br}
 \end{center}
 
-% === RESUMO ===
-% PERSONALIZAR: Ajuste o resumo abaixo para destacar as competências mais relevantes para a vaga.
 \section{Resumo}
-Cientista da Computação em formação com perfil versátil, unindo programação de sistemas de baixo nível a uma visão ampla de arquitetura de software. Proficiente em C, C++, Rust e Python, com experiência que abrange desde computação paralela (CUDA, OpenCL) e computação gráfica (OpenGL, Vulkan) até o desenvolvimento de APIs backend, administração de servidores Linux/FreeBSD e conteinerização com containers efêmeros (Docker/Podman) e de sistema (LXC/Incus, Jails/Bastille). Entusiasta de padrões de projeto, programação funcional e otimização algorítmica. Sólida base matemática reforçada por pesquisas científicas e competições nacionais.
+Estudante de Ciência da Computação na UFABC com forte base analítica e capacidade de resolução de problemas, destacando-se como Medalhista de Ouro na OBMEP (13º no Brasil) e competidor na Maratona SBC, no ICPC e na Maratona Paulista. Proficiente em programação de sistemas de baixo nível (C/C++, Rust) e desenvolvimento backend (Python, Go), com experiência em administração de infraestrutura (Linux, Docker, OCI). Entusiasta de padrões de projeto, otimização algorítmica e arquitetura de software, aplicando esses conhecimentos em pesquisas científicas e projetos de impacto.
 
-% === COMPETÊNCIAS TÉCNICAS ===
-% PERSONALIZAR: Reordene e destaque as competências mais relevantes para a vaga.
-\section{Competências Técnicas}
+\section{Competências e Idiomas}
 \resumeSubHeadingList
   \resumeItem{\textbf{Linguagens}: C, C++, Rust, Zig, Go, C\#, Java, Python, Lua, Assembly, SQL}
   \resumeItem{\textbf{Ferramentas}: Git, GitHub, GitLab, Linux, FreeBSD, Docker, Podman, LXC (Incus), Jails (Bastille), Nginx/Caddy, PostgreSQL, DBeaver, Postman, Oracle Cloud (OCI)}
   \resumeItem{\textbf{Bibliotecas e Frameworks}: CUDA, OpenGL, Vulkan, OpenCL, SDL3, WinAPI, OpenCV, Pandas, NumPy}
   \resumeItem{\textbf{Conceitos}: Algoritmos e Estruturas de Dados, Grafos e Otimização, Arquitetura de Software, Padrões de Projeto, Programação Orientada a Objetos, Programação Funcional, GPGPU}
+  \resumeItem{\textbf{Competências Pessoais}: Comunicação objetiva; sabe dividir tarefas complexas; foco no propósito; comprometimento com metas e trabalho em grupo; aprendizado rápido; reconhece pequenas vitórias.}
+  \resumeItem{\textbf{Idiomas}: Português (Fluente); Inglês (Intermediário).}
 \resumeSubHeadingListEnd
 
-% === EXPERIÊNCIA PROFISSIONAL ===
-% PERSONALIZAR: Selecione as experiências mais relevantes para a vaga. Ordene por relevância.
+\section{Formação Acadêmica}
+\resumeSubHeadingList
+  \resumeSubheading
+    {Universidade Federal do ABC (UFABC)}{Santo André, SP}
+    {Bacharelado em Ciência e Tecnologia}{Jun/2023 -- Dez/2027}
+  \resumeSubheading
+    {Universidade Federal do ABC (UFABC)}{Santo André, SP}
+    {Bacharelado em Ciência da Computação}{Jun/2023 -- Jun/2028}
+\resumeSubHeadingListEnd
+
 \section{Experiência Profissional}
 \resumeSubHeadingList
 
   \resumeSubheading
-    {Problemas de Fluxo em Redes: Teoria e Algoritmos}{Out/2025 -- Set/2026}
+    {\href{https://github.com/GabrielFrigo4/IC_Networks_Flow}{Problemas de Fluxo em Redes: Teoria e Algoritmos}}{Out/2025 -- Set/2026}
     {Iniciação Científica (CNPq)}{UFABC, SP}
     \resumeSubHeadingList
       \resumeItem{\textbullet\ Pesquisa focada em Algoritmos de Fluxos em Redes e Otimização Combinatória.}
@@ -114,15 +110,16 @@ Cientista da Computação em formação com perfil versátil, unindo programaç�
     \resumeSubHeadingListEnd
 
   \resumeSubheading
-    {Robótica Competitiva Tamandutech}{Jun/2023 -- Presente}
+    {\href{https://github.com/GabrielFrigo4/TT_MiniSumo_Arruela}{Robótica Competitiva Tamandutech}}{Jun/2023 -- Presente}
     {Desenvolvedor de Software}{UFABC, SP}
     \resumeSubHeadingList
       \resumeItem{\textbullet\ Desenvolvimento do software e sistemas de controle para robôs da categoria "mini sumo".}
       \resumeItem{\textbullet\ Aplicação de conceitos de programação de baixo nível para integração com hardware.}
+      \resumeItem{\textbullet\ Repositório adicional: \href{https://github.com/GabrielFrigo4/TTCC}{TTCC}.}
     \resumeSubHeadingListEnd
 
   \resumeSubheading
-    {Iniciação Científica PICME}{Mar/2023 -- Jan/2026}
+    {\href{https://github.com/GabrielFrigo4/PDPD_Ramsey}{Iniciação Científica PICME}}{Mar/2023 -- Jan/2026}
     {Pesquisador}{UFABC, SP}
     \resumeSubHeadingList
       \resumeItem{\textbullet\ Pesquisa avançada em Teoria de Ramsey e Combinatória Infinita, focada em subestruturas de grafos e cardinalidade.}
@@ -131,22 +128,21 @@ Cientista da Computação em formação com perfil versátil, unindo programaç�
 
 \resumeSubHeadingListEnd
 
-% === PROJETOS ===
-% PERSONALIZAR: Selecione os projetos mais relevantes para a vaga. Remova os que não agregam.
 \section{Projetos}
 \resumeSubHeadingList
 
   \resumeSubheading
-    {Catálogo de Lojas e Produtos UFABC}{Jun/2026 -- Presente}
+    {\href{https://shop.gabrielfrigo.dev.br}{Catálogo de Lojas e Produtos UFABC}}{Jun/2026 -- Presente}
     {Infraestrutura e Backend}{Go, PocketBase, Podman, Oracle Cloud (OCI)}
     \resumeSubHeadingList
       \resumeItem{\textbullet\ Catálogo colaborativo de lojas e produtos ao redor da UFABC, em produção.}
       \resumeItem{\textbullet\ Backend em Go com PocketBase, conteinerizado via Podman em instância Linux na Oracle Cloud.}
       \resumeItem{\textbullet\ Configuração de proxy reverso Caddy para HTTPS e HTTP/2.}
+      \resumeItem{\textbullet\ Projeto em produção (Live): \href{https://shop.gabrielfrigo.dev.br/}{shop.gabrielfrigo.dev.br}}
     \resumeSubHeadingListEnd
 
   \resumeSubheading
-    {Projeto de Extensão BioBlocks}{Mar/2026 -- Presente}
+    {\href{https://github.com/GabrielFrigo4/Project_Bioblocks}{Projeto de Extensão BioBlocks}}{Mar/2026 -- Presente}
     {Jogo de Quiz Interativo para Bioquímica}{Firebase, C\#, Unity}
     \resumeSubHeadingList
       \resumeItem{\textbullet\ Jogo educativo de bioquímica para estudantes de graduação e mestrado.}
@@ -154,55 +150,39 @@ Cientista da Computação em formação com perfil versátil, unindo programaç�
     \resumeSubHeadingListEnd
 
   \resumeSubheading
-    {Web Server HTTP Concorrente}{Fev/2026 -- Mai/2026}
+    {\href{https://github.com/GabrielFrigo4/unix-sock}{Web Server HTTP Concorrente}}{Fev/2026 -- Mai/2026}
     {Redes e Sistemas de Baixo Nível}{C, GNU/BSD Sockets, Caddy, HTTP/2}
     \resumeSubHeadingList
-      \resumeItem{\textbullet\ Servidor HTTP em C do zero, compatível com GNU/Linux e FreeBSD.}
-      \resumeItem{\textbullet\ Concorrência baseada em \textit{forks} e deploy em produção na Oracle Cloud (OCI).}
+      \resumeItem{\textbullet\ Servidor HTTP em C do zero, operando sobre a API de GNU/BSD Sockets, compatível com GNU/Linux e FreeBSD.}
+      \resumeItem{\textbullet\ Concorrência baseada em \textit{forks} (multiprocessamento) para requisições simultâneas.}
+      \resumeItem{\textbullet\ Deploy em produção na Oracle Cloud (OCI) com proxy reverso Caddy (HTTPS, HTTP/2).}
+      \resumeItem{\textbullet\ Projeto em produção (Live): \href{https://game.gabrielfrigo.dev.br/}{game.gabrielfrigo.dev.br}}
     \resumeSubHeadingListEnd
 
   \resumeSubheading
     {Projeto de Extensão OBI}{Jan/2026 -- Presente}
-    {Mentor e Co-idealizador}{UFABC, SP}
+    {Instrutor}{UFABC, SP}
     \resumeSubHeadingList
-      \resumeItem{\textbullet\ Co-idealização da iniciativa para elevar a representatividade regional na OBI.}
+      \resumeItem{\textbullet\ Membro da iniciativa para elevar a representatividade regional na OBI.}
       \resumeItem{\textbullet\ Mentoria em algoritmos e estruturas de dados para múltiplos níveis da competição.}
     \resumeSubHeadingListEnd
 
 \resumeSubHeadingListEnd
 
-% === MARATONAS DE PROGRAMAÇÃO ===
-\section{Maratonas de Programação}
+\section{Prêmios e Competições Acadêmicas}
 \resumeSubHeadingList
-  \resumeItem{\textbf{107ª Posição (2025) e 135ª Posição (2024) na Fase Regional} -- Maratona SBC de Programação (ICPC)}
   \resumeItem{\textbf{14ª Posição (2026) e 15ª Posição (2025)} -- Maratona Paulista de Programação}
-\resumeSubHeadingListEnd
-
-% === PRÊMIOS ===
-\section{Prêmios e Olimpíadas}
-\resumeSubHeadingList
-  \resumeItem{\textbf{Medalhas de Ouro (2022 - 13ª Posição Nacional), Prata (2018, 2019) e Bronze (2017, 2021)} -- OBMEP}
-  \resumeItem{\textbf{Medalhas de Ouro (2019, 2022)} -- Olimpíada Brasileira de Astronomia e Astronáutica (OBA)}
+  \resumeItem{\textbf{107ª Posição (2025) e 135ª Posição (2024) na Fase Regional} -- Maratona SBC de Programação e ICPC}
+  \resumeItem{\textbf{Menção Honrosa (2024)} -- Olimpíada Brasileira de Informática (OBI)}
   \resumeItem{\textbf{Medalha de Prata (2023) e Menção Honrosa (2025)} -- Competição de Lógica (CELLM)}
   \resumeItem{\textbf{Medalha de Bronze (2021)} -- Olimpíada Paulista de Matemática (OPM)}
-  \resumeItem{\textbf{Menção Honrosa (2024)} -- Olimpíada Brasileira de Informática (OBI)}
+  \resumeItem{\textbf{Medalhas de Ouro (2019, 2022)} -- Olimpíada Brasileira de Astronomia e Astronáutica (OBA)}
+  \resumeItem{\textbf{Medalhas de Ouro (2022 - 13ª Posição Nacional), Prata (2018, 2019) e Bronze (2017, 2021)} -- OBMEP}
 \resumeSubHeadingListEnd
 
-% === FORMAÇÃO ACADÊMICA ===
-% PERSONALIZAR: Adicione ou remova cursos conforme necessário.
-\section{Formação Acadêmica}
-\resumeSubHeadingList
-  \resumeSubheading
-    {Universidade Federal do ABC (UFABC)}{Santo André, SP}
-    {Bacharelado em Ciência da Computação e Ciência e Tecnologia}{Jun/2023 -- Dez/2027}
-\resumeSubHeadingListEnd
-
-% === CERTIFICAÇÕES ===
-% PERSONALIZAR: Adicione certificações relevantes para a vaga.
 \section{Certificações}
 \resumeSubHeadingList
   \resumeItem{\textbullet\ \href{https://efset.org/cert/9uJjv8}{EFSET English Certificate 50/100 (B1 Intermediário)}}
-  \resumeItem{\textbullet\ NLW Unite - C\#}
 \resumeSubHeadingListEnd
 
 \end{document}

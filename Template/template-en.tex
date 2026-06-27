@@ -1,6 +1,5 @@
 \documentclass[letterpaper,10pt]{article}
 
-% === PACOTES E CONFIGURAÇÕES ===
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -14,7 +13,6 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-% Fonte Sans-Serif Limpa (Roboto)
 \usepackage[sfdefault]{roboto}
 
 \pagestyle{fancy}
@@ -24,11 +22,10 @@
 \renewcommand{\footrulewidth}{0pt}
 \setlength{\footskip}{5pt}
 
-% Ajuste de Margens
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.5in}
+\addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -36,16 +33,13 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Formatação de Seções (Esconde números automaticamente)
 \titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
 
-% Otimização para leitura por ATS (Applicant Tracking Systems)
 \pdfgentounicode=1
 
-% === COMANDOS CUSTOMIZADOS ===
 \newcommand{\resumeItem}[1]{\item\small{#1}}
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+\vspace{-1pt}\item
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
     \textit{#3} & \textit{#4} \\
@@ -55,154 +49,140 @@
 \newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
-% ==============================================
-%               INÍCIO DO DOCUMENTO
-% ==============================================
 \begin{document}
 
-% === CABEÇALHO ===
 \begin{center}
   \textbf{\Huge Gabriel Frigo} \\
-  \vspace{2pt}
   \small +55 11 95570-2000 $|$ \href{mailto:gabriel.frigo4@gmail.com}{gabriel.frigo4@gmail.com} $|$
-  \href{https://www.linkedin.com/in/gabriel-frigo-b6727b275/}{linkedin.com/in/gabriel-frigo} $|$
-  \href{https://github.com/GabrielFrigo4}{github.com/GabrielFrigo4}
+  \href{https://linkedin.com/in/gabriel-frigo-b6727b275/}{linkedin.com/in/gabriel-frigo} $|$
+  \href{https://github.com/GabrielFrigo4}{github.com/GabrielFrigo4} $|$
+  \href{https://gabrielfrigo.dev.br}{gabrielfrigo.dev.br}
 \end{center}
 
-% === RESUMO ===
-% CUSTOMIZE: Adjust the summary below to highlight the most relevant skills for the position.
 \section{Summary}
-Undergraduate Computer Science student with a versatile profile, bridging low-level systems programming and a broad software architecture mindset. Proficient in C, C++, Rust, and Python, with experience spanning parallel computing (CUDA, OpenCL) and computer graphics (OpenGL, Vulkan) to backend API development, Linux/FreeBSD server administration, and containerization with ephemeral (Docker/Podman) and system containers (LXC/Incus, Jails/Bastille). Passionate about design patterns, functional programming, and algorithmic optimization. Strong mathematical foundation reinforced by scientific research and national-level competitions.
+Computer Science student at UFABC with a strong analytical foundation and problem-solving mindset, standing out as a Gold Medalist at OBMEP (13th National Rank) and an active competitor in the SBC Programming Marathon, the ICPC, and the São Paulo Programming Marathon. Proficient in low-level systems programming (C/C++, Rust) and backend development (Python, Go), with hands-on experience in infrastructure administration (Linux, Docker, OCI). Passionate about design patterns, algorithmic optimization, and software architecture, applying this knowledge to scientific research and impactful projects.
 
-% === COMPETÊNCIAS TÉCNICAS ===
-% CUSTOMIZE: Reorder and highlight the most relevant skills for the position.
-\section{Technical Skills}
+\section{Skills \& Languages}
 \resumeSubHeadingList
   \resumeItem{\textbf{Languages}: C, C++, Rust, Zig, Go, C\#, Java, Python, Lua, Assembly, SQL}
   \resumeItem{\textbf{Tools}: Git, GitHub, GitLab, Linux, FreeBSD, Docker, Podman, LXC (Incus), Jails (Bastille), Nginx/Caddy, PostgreSQL, DBeaver, Postman, Oracle Cloud (OCI)}
-  \resumeItem{\textbf{Libraries and Frameworks}: CUDA, OpenGL, Vulkan, OpenCL, SDL3, WinAPI, OpenCV, Pandas, NumPy}
-  \resumeItem{\textbf{Concepts}: Data Structures and Algorithms, Graphs and Optimization, Software Architecture, Design Patterns, Object-Oriented Programming, Functional Programming, GPGPU}
+  \resumeItem{\textbf{Libraries \& Frameworks}: CUDA, OpenGL, Vulkan, OpenCL, SDL3, WinAPI, OpenCV, Pandas, NumPy}
+  \resumeItem{\textbf{Concepts}: Data Structures \& Algorithms, Graphs \& Optimization, Software Architecture, Design Patterns, Object-Oriented Programming, Functional Programming, GPGPU}
+  \resumeItem{\textbf{Soft Skills}: Objective communication; ability to break down complex tasks; goal-oriented; committed to targets and teamwork; fast learner; values small victories.}
+  \resumeItem{\textbf{Languages}: Portuguese (Native); English (Intermediate).}
 \resumeSubHeadingListEnd
 
-% === EXPERIÊNCIA PROFISSIONAL ===
-% CUSTOMIZE: Select the most relevant experiences for the position. Order by relevance.
+\section{Education}
+\resumeSubHeadingList
+  \resumeSubheading
+    {Universidade Federal do ABC (UFABC)}{Santo André, SP}
+    {B.S. in Science and Technology}{Jun/2023 -- Dec/2027}
+  \resumeSubheading
+    {Universidade Federal do ABC (UFABC)}{Santo André, SP}
+    {B.S. in Computer Science}{Jun/2023 -- Jun/2028}
+\resumeSubHeadingListEnd
+
 \section{Professional Experience}
 \resumeSubHeadingList
 
   \resumeSubheading
-    {Network Flow Problems: Theory and Algorithms}{Oct/2025 -- Sep/2026}
-    {Undergraduate Research (CNPq)}{UFABC, SP}
+    {\href{https://github.com/GabrielFrigo4/IC_Networks_Flow}{Network Flow Problems: Theory and Algorithms}}{Oct/2025 -- Sep/2026}
+    {Undergraduate Researcher (CNPq)}{UFABC, SP}
     \resumeSubHeadingList
       \resumeItem{\textbullet\ Research focused on Network Flow Algorithms and Combinatorial Optimization.}
-      \resumeItem{\textbullet\ Study of Graph Theory and development of algorithmic implementations in C++.}
+      \resumeItem{\textbullet\ Studied Graph Theory and developed algorithmic implementations in C++.}
     \resumeSubHeadingListEnd
 
   \resumeSubheading
     {GRUB Competitive Programming}{Jan/2024 -- Present}
     {Team Member}{UFABC, SP}
     \resumeSubHeadingList
-      \resumeItem{\textbullet\ Participated in the Maratona Paulista de Programação and the International Collegiate Programming Contest (ICPC).}
-      \resumeItem{\textbullet\ Solved complex algorithmic problems using C/C++ and advanced data structures.}
+      \resumeItem{\textbullet\ Participated in the São Paulo Programming Marathon and the International Collegiate Programming Contest (ICPC).}
+      \resumeItem{\textbullet\ Solved complex problems using C/C++ and advanced data structures.}
     \resumeSubHeadingListEnd
 
   \resumeSubheading
     {Green Team Hacker Club (GTHC)}{Dec/2023 -- Present}
     {Project Analyst}{Santo André, SP}
     \resumeSubHeadingList
-      \resumeItem{\textbullet\ Project management and technical instruction for the GTHC Low Level / Infrastructure course.}
-      \resumeItem{\textbullet\ Teaching C/C++, Rust, Zig, and Assembly focused on systems and low-level development.}
+      \resumeItem{\textbullet\ Managed projects and provided technical instruction in the GTHC Low Level / Infrastructure course.}
+      \resumeItem{\textbullet\ Taught C/C++, Rust, Zig, and Assembly focused on systems and low-level programming.}
     \resumeSubHeadingListEnd
 
   \resumeSubheading
-    {Tamandutech Competitive Robotics}{Jun/2023 -- Present}
+    {\href{https://github.com/GabrielFrigo4/TT_MiniSumo_Arruela}{Tamandutech Competitive Robotics}}{Jun/2023 -- Present}
     {Software Developer}{UFABC, SP}
     \resumeSubHeadingList
       \resumeItem{\textbullet\ Developed software and control systems for "mini sumo" category robots.}
-      \resumeItem{\textbullet\ Integrated low-level programming concepts with robotics hardware.}
+      \resumeItem{\textbullet\ Applied low-level programming concepts for hardware integration.}
+      \resumeItem{\textbullet\ Additional repository: \href{https://github.com/GabrielFrigo4/TTCC}{TTCC}.}
     \resumeSubHeadingListEnd
 
   \resumeSubheading
-    {PICME Undergraduate Research}{Mar/2023 -- Jan/2026}
+    {\href{https://github.com/GabrielFrigo4/PDPD_Ramsey}{PICME Scientific Research}}{Mar/2023 -- Jan/2026}
     {Researcher}{UFABC, SP}
     \resumeSubHeadingList
-      \resumeItem{\textbullet\ Advanced research in Ramsey Theory and Infinite Combinatorics, focusing on graph substructures and cardinality.}
+      \resumeItem{\textbullet\ Conducted advanced research in Ramsey Theory and Infinite Combinatorics, focusing on graph substructures and cardinality.}
       \resumeItem{\textbullet\ Developed reports and formal proofs under the PICME excellence program (IMPA/OBMEP).}
     \resumeSubHeadingListEnd
 
 \resumeSubHeadingListEnd
 
-% === PROJETOS ===
-% CUSTOMIZE: Select the most relevant projects for the position. Remove those that don't add value.
 \section{Projects}
 \resumeSubHeadingList
 
   \resumeSubheading
-    {UFABC Store and Product Catalog}{Jun/2026 -- Present}
-    {Infrastructure and Backend}{Go, PocketBase, Podman, Oracle Cloud (OCI)}
+    {\href{https://shop.gabrielfrigo.dev.br}{UFABC Store \& Product Catalog}}{Jun/2026 -- Present}
+    {Infrastructure \& Backend}{Go, PocketBase, Podman, Oracle Cloud (OCI)}
     \resumeSubHeadingList
       \resumeItem{\textbullet\ Collaborative catalog of stores and products around UFABC, live in production.}
       \resumeItem{\textbullet\ Go backend with PocketBase, containerized via Podman on a Linux instance at Oracle Cloud.}
       \resumeItem{\textbullet\ Configured Caddy reverse proxy for HTTPS and HTTP/2.}
+      \resumeItem{\textbullet\ Live Project: \href{https://shop.gabrielfrigo.dev.br/}{shop.gabrielfrigo.dev.br}}
     \resumeSubHeadingListEnd
 
   \resumeSubheading
-    {BioBlocks Extension Project}{Mar/2026 -- Present}
+    {\href{https://github.com/GabrielFrigo4/Project_Bioblocks}{BioBlocks Extension Project}}{Mar/2026 -- Present}
     {Interactive Biochemistry Quiz Game}{Firebase, C\#, Unity}
     \resumeSubHeadingList
-      \resumeItem{\textbullet\ Educational biochemistry game designed for undergraduate and graduate students.}
+      \resumeItem{\textbullet\ Educational biochemistry game aimed at undergraduate and graduate students.}
       \resumeItem{\textbullet\ Implemented gamified quiz mechanics using Unity and Firebase.}
     \resumeSubHeadingListEnd
 
   \resumeSubheading
-    {Concurrent HTTP Web Server}{Feb/2026 -- May/2026}
-    {Low-Level Systems and Networking}{C, GNU/BSD Sockets, Caddy, HTTP/2}
+    {\href{https://github.com/GabrielFrigo4/unix-sock}{Concurrent HTTP Web Server}}{Feb/2026 -- May/2026}
+    {Low-Level Systems \& Networking}{C, GNU/BSD Sockets, Caddy, HTTP/2}
     \resumeSubHeadingList
-      \resumeItem{\textbullet\ HTTP server in C from scratch, cross-platform with GNU/Linux and FreeBSD.}
-      \resumeItem{\textbullet\ Fork-based concurrency and production deployment on Oracle Cloud (OCI).}
+      \resumeItem{\textbullet\ HTTP server in C from scratch, built on the GNU/BSD Sockets API, cross-platform with GNU/Linux and FreeBSD.}
+      \resumeItem{\textbullet\ Fork-based concurrency (multiprocessing) for handling simultaneous requests.}
+      \resumeItem{\textbullet\ Deployed on Oracle Cloud (OCI) with Caddy reverse proxy (HTTPS, HTTP/2).}
+      \resumeItem{\textbullet\ Live Project: \href{https://game.gabrielfrigo.dev.br/}{game.gabrielfrigo.dev.br}}
     \resumeSubHeadingListEnd
 
   \resumeSubheading
-    {OBI Mentorship Project}{Jan/2026 -- Present}
-    {Mentor and Co-founder}{UFABC, SP}
+    {OBI Extension Project}{Jan/2026 -- Present}
+    {Instructor}{UFABC, SP}
     \resumeSubHeadingList
-      \resumeItem{\textbullet\ Co-founded the initiative to increase regional representation in the Brazilian Informatics Olympiad (OBI).}
-      \resumeItem{\textbullet\ Mentored students in algorithms and logic across multiple competition levels.}
+      \resumeItem{\textbullet\ Core member of an initiative aimed at increasing regional representation in the Brazilian Informatics Olympiad (OBI).}
+      \resumeItem{\textbullet\ Mentored students in algorithms and data structures across multiple competition levels.}
     \resumeSubHeadingListEnd
 
 \resumeSubHeadingListEnd
 
-% === PROGRAMMING CONTESTS ===
-\section{Programming Contests}
+\section{Honors \& Academic Competitions}
 \resumeSubHeadingList
-  \resumeItem{\textbf{107th (2025) and 135th (2024) Places in the Regional Phase} -- SBC Programming Marathon (ICPC)}
   \resumeItem{\textbf{14th Place (2026) and 15th Place (2025)} -- S\~{a}o Paulo Programming Marathon}
+  \resumeItem{\textbf{107th (2025) and 135th (2024) Places in the Regional Phase} -- SBC Programming Marathon and ICPC}
+  \resumeItem{\textbf{Honorable Mention (2024)} -- OBI (Brazilian Informatics Olympiad)}
+  \resumeItem{\textbf{Silver Medal (2023) and Honorable Mention (2025)} -- CELLM (Logic Competition)}
+  \resumeItem{\textbf{Bronze Medal (2021)} -- OPM (S\~{a}o Paulo Mathematics Olympiad)}
+  \resumeItem{\textbf{Gold Medals (2019, 2022)} -- OBA (Brazilian Astronomy and Astronautics Olympiad)}
+  \resumeItem{\textbf{Gold (2022 - 13th National Rank), Silver (2018, 2019), and Bronze (2017, 2021) Medals} -- OBMEP (Brazilian Public Schools Math Olympiad)}
 \resumeSubHeadingListEnd
 
-% === PRÊMIOS ===
-\section{Honors and Awards}
-\resumeSubHeadingList
-  \resumeItem{\textbf{Gold (2022 - 13th National Rank), Silver (2018, 2019) and Bronze (2017, 2021) Medals} -- Brazilian Public Schools Math Olympiad (OBMEP)}
-  \resumeItem{\textbf{Gold Medals (2019, 2022)} -- Brazilian Astronomy and Astronautics Olympiad (OBA)}
-  \resumeItem{\textbf{Silver Medal (2023) and Honorable Mention (2025)} -- Math League Logic Competition (CELLM)}
-  \resumeItem{\textbf{Bronze Medal (2021)} -- S\~{a}o Paulo Mathematics Olympiad (OPM)}
-  \resumeItem{\textbf{Honorable Mention (2024)} -- Brazilian Informatics Olympiad (OBI)}
-\resumeSubHeadingListEnd
-
-% === EDUCAÇÃO ===
-% CUSTOMIZE: Add or remove courses as needed.
-\section{Education}
-\resumeSubHeadingList
-  \resumeSubheading
-    {Federal University of ABC (UFABC)}{Santo André, SP}
-    {Bachelor of Science in Computer Science and Science and Technology}{Jun/2023 -- Dec/2027}
-\resumeSubHeadingListEnd
-
-% === CERTIFICAÇÕES ===
-% CUSTOMIZE: Add certifications relevant to the position.
 \section{Certifications}
 \resumeSubHeadingList
   \resumeItem{\textbullet\ \href{https://efset.org/cert/9uJjv8}{EFSET English Certificate 50/100 (B1 Intermediate)}}
-  \resumeItem{\textbullet\ NLW Unite - C\#}
 \resumeSubHeadingListEnd
 
 \end{document}
