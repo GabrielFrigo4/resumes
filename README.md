@@ -22,9 +22,10 @@ Para manter o fluxo de atualização rápido e eficiente, este repositório cont
 
 Sempre que uma alteração é enviada à branch principal:
 
-1.  Um _runner_ do GitHub inicializa um ambiente com uma distribuição TeX.
-2.  Os arquivos `.tex` são compilados nativamente.
-3.  Os PDFs gerados ([`resume-pt.pdf`][download_resume_pt], [`resume-en.pdf`][download_resume_en], [`letter-pt.pdf`][download_letter_pt] e [`letter-en.pdf`][download_letter_en]) são automaticamente atualizados e disponibilizados para download na aba de _Releases_.
+1.  Um _runner_ do GitHub inicializa um ambiente com uma distribuição TeX e a ferramenta `chktex`.
+2.  É feito um **Linting Automático**, emitindo avisos de qualidade e formatação diretamente nos logs da Action.
+3.  Os arquivos `.tex` são compilados nativamente. Em caso de erros sintáticos críticos no código LaTeX, a execução é interrompida para evitar a publicação de PDFs quebrados.
+4.  Os PDFs gerados ([`resume-pt.pdf`][download_resume_pt], [`resume-en.pdf`][download_resume_en], [`letter-pt.pdf`][download_letter_pt] e [`letter-en.pdf`][download_letter_en]) são automaticamente atualizados e disponibilizados para download na aba de _Releases_.
 
 ---
 
@@ -92,16 +93,27 @@ Caso queira clonar este repositório para inspecionar o código, utilizar o layo
 git clone "https://github.com/GabrielFrigo4/Resumes.git"
 ```
 
-3.  Compile o arquivo `.tex` desejado utilizando o compilador `pdflatex`:
+3.  Utilize o `Makefile` incluído na raiz do projeto para automatizar e otimizar as compilações. Você pode gerar todos de uma vez ou direcionar para pastas específicas:
 
 ```bash
-pdflatex resume-pt.tex
-pdflatex resume-en.tex
-pdflatex letter-pt.tex
-pdflatex letter-en.tex
+# Compilar todos os documentos do repositório
+make all
+
+# Compilar apenas os currículos (pasta Resume)
+make resumes
+
+# Compilar apenas as cartas (pasta Letter)
+make letters
+
+# Compilar apenas os templates (pasta Template)
+make templates
 ```
 
-4.  O arquivo `.pdf` correspondente será gerado no mesmo diretório.
+4.  Para manter o ambiente limpo, removendo arquivos intermediários (como `.log`, `.aux`, `.out`) e os PDFs gerados localmente, basta utilizar o comando:
+
+```bash
+make clean
+```
 
 ---
 

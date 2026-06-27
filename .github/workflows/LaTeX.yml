@@ -17,11 +17,20 @@ jobs:
             - name: Fazer Checkout do código
               uses: actions/checkout@v4
 
+            - name: Executar Linting (Avisos de Formatação)
+              run: |
+                  sudo apt-get update && sudo apt-get install -y chktex
+                  shopt -s globstar nullglob
+                  for file in **/*.tex; do
+                    echo "==== Linting: $file ===="
+                    # Executa chktex no arquivo atual. "|| true" impede que avisos de linter quebrem a pipeline
+                    chktex -v0 "$file" || true
+                  done
+
             - name: Compilar todos os arquivos LaTeX
               uses: xu-cheng/latex-action@v3
               with:
                   root_file: "**/*.tex"
-                  continue_on_error: true
 
             - name: Deletar Release e Tag 'latest' antigas
               uses: dev-drprasad/delete-tag-and-release@v1.1
