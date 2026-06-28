@@ -19,12 +19,11 @@ jobs:
 
             - name: Executar Linting (Avisos de Formatação)
               run: |
-                  sudo apt-get update && sudo apt-get install -y chktex
+                  sudo apt update && sudo apt install -y chktex
                   shopt -s globstar nullglob
                   for file in **/*.tex; do
-                    echo "==== Linting: $file ===="
-                    # Executa chktex no arquivo atual. "|| true" impede que avisos de linter quebrem a pipeline
-                    chktex -v0 "$file" || true
+                      echo "==== Linting: ${file} ===="
+                      chktex -v0 -n 1 -n 8 -n 13 -n 27 "${file}" || true
                   done
 
             - name: Compilar todos os arquivos LaTeX
@@ -92,7 +91,7 @@ jobs:
                           echo "## 📂 ${TITLE}" >> "${RELEASE_NOTE}"
                       fi
 
-                      IFS='|' read -r -a PDF_LIST <<< "${DIRS_MAP[$DIR]}"
+                      IFS='|' read -r -a PDF_LIST <<< "${DIRS_MAP[${DIR}]}"
                       mapfile -t SORTED_PDFS < <(printf '%s\n' "${PDF_LIST[@]}" | sort)
 
                       for PDF_FILE in "${SORTED_PDFS[@]}"; do
